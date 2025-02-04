@@ -13,8 +13,16 @@ function App() {
     |   |-- Detail.jsx
     |-- App.jsx
    */
-
-  return <></>;
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/detail/:id" element={<Detail />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App;
